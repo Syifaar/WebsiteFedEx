@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Admin History</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/faviconn.png" rel="icon">
+  <link href="assets/img/PELACAKAN (8).png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Presento - v1.1.1
+  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-xl-10 d-flex align-items-center">
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <a href="homeAdmin.html" class="logo mr-auto"><img src="assets/img/Fedex-logo.png" alt="Logo FedEx"></a>
+
+          <nav class="nav-menu d-none d-lg-block">
+            <ul>
+              <li><a href="admin.html" style="color: slateblue;">History</a></li>
+              <li><a href="verification.html">Verification</a></li>
+            </ul>
+          </nav><!-- .nav-menu -->
+      </div>
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Upper Section ======= -->
+  <section id="upper" class="d-flex align-items-center">
+
+    <div class="container-fluid" data-aos="zoom-out" data-aos-delay="100">
+      <div class="row justify-content-center">
+        <div class="col-xl-10">
+          <div class="row">
+            <div class="col-xl-5">
+              <h1>Admin</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Upper -->
+
+   <!-- ======= Table Section ======= -->
+   <center>
+  <table class="content-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Tanggal</th>
+        <th>Email</th>
+        <th>Nama Pengirim</th>
+        <th>Kota Tujuan</th>
+        <th>Jumlah</th>
+        <th>Harga</th>
+        <th>Detail</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>11/02/2024</td>
+        <td>stnur123@gmail.com</td>
+        <td>Siti Nurbayanah</td>
+        <td>Bandung</td>
+        <td>1</td>
+        <td>Rp 35.000,00</td>
+        <td><button onclick="showDetails('2000-999-0909-12', 'Document', '1 kg', '11/02/2024', 'Telah tiba di Jakarta', '1', 'Siti Nurbayanah', 'Bandung', 'Onixa', 'Jakarta Selatan')">view</button></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>11/03/2024</td>
+        <td>johnkate@gmail.com</td>
+        <td>Kate John</td>
+        <td>Bandung</td>
+        <td>2</td>
+        <td>Rp 40.000,00</td>
+        <td><button onclick="showDetails('2001-123-4567-89', 'Electronics', '3 kg', '11/03/2024', 'Sedang dalam pengiriman', '2', 'John Kate', 'Bandung', 'Alice', 'Surabaya')">view</button></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>11/04/2024</td>
+        <td>alysec@gmail.com</td>
+        <td>Chris Elyse</td>
+        <td>Surabaya</td>
+        <td>3</td>
+        <td>Rp 35.000,00</td>
+        <td><button onclick="showDetails('2002-456-7890-12', 'Clothing', '2 kg', '11/04/2024', 'Telah tiba di Surabaya', '3', 'Chris Elyse', 'Surabaya', 'Bobby', 'Bandung')">view</button></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>11/05/2024</td>
+        <td>janderson@gmail.com</td>
+        <td>Josh Anderson</td>
+        <td>Medan</td>
+        <td>5</td>
+        <td>Rp 35.000,00</td>
+        <td><button onclick="showDetails('2003-789-0123-45', 'Books', '4 kg', '11/05/2024', 'Sedang dalam proses verifikasi', '5', 'Josh Anderson', 'Medan', 'Claire', 'Jakarta')">view</button></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>11/06/20214</td>
+        <td>okaywa@gmail.com</td>
+        <td>Okay Okinawa</td>
+        <td>Yogyakarta</td>
+        <td>2</td>
+        <td>Rp 35.000,00</td>
+        <td><button onclick="showDetails('2004-234-5678-90', 'Accessories', '1 kg', '11/06/2024', 'Dalam perjalanan', '2', 'Okay Okinawa', 'Yogyakarta', 'David', 'Denpasar')">view</button></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>11/07/2024</td>
+        <td>tft@gmail.com</td>
+        <td>Taylor Fill</td>
+        <td>Semarang</td>
+        <td>4</td>
+        <td>Rp 38.000,00</td>
+        <td><button onclick="showDetails('2005-345-6789-01', 'Cosmetics', '2 kg', '11/07/2024', 'Telah tiba di Semarang', '4', 'Taylor Fill', 'Semarang', 'Emily', 'Yogyakarta')">view</button></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>11/08/2024</td>
+        <td>barney@gmail.com</td>
+        <td>Anne Barney</td>
+        <td>Pontianak</td>
+        <td>9</td>
+        <td>Rp 45.000,00</td>
+        <td><button onclick="showDetails('2006-567-8901-23', 'Toys', '5 kg', '11/08/2024', 'Sedang dalam proses pengecekan', '9', 'Anne Barney', 'Pontianak', 'George', 'Surabaya')">view</button></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>11/09/2024</td>
+        <td>collins@gmail.com</td>
+        <td>Stuart Collin</td>
+        <td>Padang</td>
+        <td>5</td>
+        <td>Rp 35.000,00</td>
+        <td><button onclick="showDetails('2007-678-9012-34', 'Gadgets', '3 kg', '11/09/2024', 'Telah tiba di Padang', '5', 'Stuart Collin', 'Padang', 'Fiona', 'Medan')">view</button></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>11/10/2024</td>
+        <td>keyc@gmail.com</td>
+        <td>Collins Key</td>
+        <td>Palembang</td>
+        <td>1</td>
+        <td>Rp 35.000,00</td>
+        <td><button onclick="showDetails('2008-789-0123-45', 'Jewelry', '0.5 kg', '11/10/2024', 'Telah tiba di Palembang', '1', 'Collins Key', 'Palembang', 'Lily', 'Bandung')">view</button></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>11/11/2024</td>
+        <td>alfinm@gmail.com</td>
+        <td>Miguel Alfin</td>
+        <td>Bali</td>
+        <td>2</td>
+        <td>Rp 25.000,00</td>
+        <td><button onclick="showDetails('2009-890-1234-56', 'Furniture', '10 kg', '11/11/2024', 'Sedang dalam pengiriman', '2', 'Miguel Alfin', 'Bali', 'Sophia', 'Jakarta')">view</button></td>
+      </tr>
+      
+    </tbody>
+  </table>
+</center><!-- End Table -->
+
+  <!-- ======= View Section ======= -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close-view" onclick="closeModal()">&times;</span>
+    <table class="content-table-view">
+      <thead>
+        <tr>
+          <th>Informasi Pengiriman</th>
+          <th>Detail</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nomor Resi</td>
+          <td><span id="nomorResi"></span></td>
+        </tr>
+        <tr>
+          <td>Nama Paket</td>
+          <td><span id="namaPaket"></span></td>
+        </tr>
+        <tr>
+          <td>Berat</td>
+          <td><span id="beratPaket"></span></td>
+        </tr>
+        <tr>
+          <td>Tanggal Pengiriman</td>
+          <td><span id="tanggalPengiriman"></span></td>
+        </tr>
+        <tr>
+          <td>Status Pengiriman</td>
+          <td><span id="statusPengiriman"></span></td>
+        </tr>
+        <tr>
+          <td>Jumlah Barang</td>
+          <td><span id="jumlahBarang"></span></td>
+        </tr>
+        <tr>
+          <td>Nama Pengirim</td>
+          <td><span id="namaPengirim"></span></td>
+        </tr>
+        <tr>
+          <td>Alamat Pengirim</td>
+          <td><span id="alamatPengirim"></span></td>
+        </tr>
+        <tr>
+          <td>Nama Penerima</td>
+          <td><span id="namaPenerima"></span></td>
+        </tr>
+        <tr>
+          <td>Alamat Penerima</td>
+          <td><span id="alamatPenerima"></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div><!-- End View -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>FedEx Tracking<span>.</span></h3>
+            <p>
+              UIN Sunan Gunung Djati Bandung <br>
+              Jl. A.H. Nasution No. 105A,<br>
+              Cibiru, Kota Bandung, Jawa Barat, Indonesia. <br>
+              40614 </br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">History</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Verification</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Kontak</h4>
+            <p> 
+              <strong>Phone:</strong> 085864785957 <br>
+              <strong>Email:</strong> awikwok@gmail.com<br>
+              <strong>Instagram:</strong> belum ada bang<br>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="mr-md-auto text-center text-md-left">
+
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/presento-bootstrap-corporate-template/ -->
+          © 2024 FedExTracking.com. All rights reserved. Hak cipta FedEx Tracking Delivery Service. Privacy & Policy. Version. </a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/popup.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    function showDetails(nomorResi, namaPaket, berat, tanggalPengiriman, statusPengiriman, jumlahBarang, namaPengirim, alamatPengirim, namaPenerima, alamatPenerima) {
+  // Mengisi data dalam modal dengan nilai yang diberikan
+  document.getElementById("nomorResi").textContent = nomorResi;
+  document.getElementById("namaPaket").textContent = namaPaket;
+  document.getElementById("beratPaket").textContent = berat;
+  document.getElementById("tanggalPengiriman").textContent = tanggalPengiriman;
+  document.getElementById("statusPengiriman").textContent = statusPengiriman;
+  document.getElementById("jumlahBarang").textContent = jumlahBarang;
+  document.getElementById("namaPengirim").textContent = namaPengirim;
+  document.getElementById("alamatPengirim").textContent = alamatPengirim;
+  document.getElementById("namaPenerima").textContent = namaPenerima;
+  document.getElementById("alamatPenerima").textContent = alamatPenerima;
+
+  // Menampilkan modal
+  var modal = document.getElementById("myModal");
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  // Menyembunyikan modal saat tombol close ditekan
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
+
+// Menutup modal jika pengguna mengklik di luar area modal
+window.onclick = function(event) {
+  var modal = document.getElementById("myModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+  </script>
+</body>
+
+</html>
